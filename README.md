@@ -7,6 +7,9 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)
+![Live Demo](https://img.shields.io/badge/Live%20Dashboard-Interactive%20Web%20App-00E676?style=for-the-badge&logo=googlechrome&logoColor=white)
+
+👉 **[Click Here to Open Live Interactive Dashboard](https://gopalmahere.github.io/zomato-product-analytics-platform/)**
 
 **An End-to-End Product Analytics Platform simulating Zomato's food delivery ecosystem**
 
