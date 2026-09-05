@@ -1,0 +1,301 @@
+restaurant_id,restaurant_name,city,cuisine,average_rating,average_prep_time
+REST0001,"Ram, Khare and Joshi Restaurant",Chennai,Italian,3.2,33
+REST0002,"Borde, Dua and Tank Restaurant",Delhi,Chinese,3.8,36
+REST0003,Aurora and Sons Restaurant,Delhi,Chinese,4.3,45
+REST0004,Chahal-Tara Restaurant,Pune,South Indian,3.8,50
+REST0005,Sha LLC Restaurant,Jaipur,Chinese,3.6,40
+REST0006,Merchant and Sons Restaurant,Kolkata,Chinese,3.2,21
+REST0007,Mammen PLC Restaurant,Delhi,Chinese,3.3,47
+REST0008,Pandit-Chakraborty Restaurant,Delhi,Italian,3.1,36
+REST0009,Gola Ltd Restaurant,Kolkata,Healthy Food,4.5,42
+REST0010,Kuruvilla-Solanki Restaurant,Jaipur,Fast Food,3.6,20
+REST0011,Sathe-Dey Restaurant,Kolkata,Italian,4.2,47
+REST0012,Sura Inc Restaurant,Bengaluru,Italian,3.6,22
+REST0013,Mangat-Rattan Restaurant,Pune,Italian,4.3,42
+REST0014,Dayal-Sastry Restaurant,Hyderabad,Biryani,4.4,21
+REST0015,Vala-Murthy Restaurant,Bengaluru,Italian,5.0,52
+REST0016,Chacko-Sachdev Restaurant,Bengaluru,Italian,3.2,40
+REST0017,"Sengupta, Lall and Basak Restaurant",Delhi,Fast Food,5.0,24
+REST0018,"Bhandari, Konda and Anand Restaurant",Kolkata,North Indian,4.2,20
+REST0019,Cheema LLC Restaurant,Delhi,Cafe,3.8,34
+REST0020,Dutt-Rastogi Restaurant,Hyderabad,Italian,3.7,45
+REST0021,Kapoor Group Restaurant,Delhi,Desserts,3.9,18
+REST0022,Chander-Palla Restaurant,Pune,South Indian,3.5,32
+REST0023,Sidhu-Warrior Restaurant,Chennai,Cafe,3.5,18
+REST0024,Chopra-Chada Restaurant,Bengaluru,North Indian,3.0,57
+REST0025,Chokshi Group Restaurant,Chennai,Italian,3.6,32
+REST0026,Iyengar-Ratti Restaurant,Mumbai,Cafe,3.4,46
+REST0027,Bhattacharyya-Nadig Restaurant,Chennai,Pizza,3.6,21
+REST0028,Sunder-Kala Restaurant,Delhi,Desserts,4.5,23
+REST0029,"Soni, Contractor and Mallick Restaurant",Chennai,Pizza,4.5,38
+REST0030,Barad-Dugal Restaurant,Chennai,Italian,4.3,28
+REST0031,Dhingra-Kala Restaurant,Kolkata,South Indian,4.8,23
+REST0032,Balay-Rai Restaurant,Mumbai,North Indian,4.2,56
+REST0033,Pathak Group Restaurant,Hyderabad,Italian,4.4,21
+REST0034,Kala-Bhagat Restaurant,Mumbai,Desserts,4.2,34
+REST0035,Bajaj Ltd Restaurant,Jaipur,Italian,4.1,24
+REST0036,Madan-Krishnan Restaurant,Delhi,Chinese,3.4,50
+REST0037,"Goda, Chacko and Dhar Restaurant",Pune,Desserts,5.0,38
+REST0038,Mahal Group Restaurant,Jaipur,South Indian,4.8,19
+REST0039,Misra Ltd Restaurant,Jaipur,Cafe,4.0,47
+REST0040,Saini-Vohra Restaurant,Delhi,Chinese,4.2,59
+REST0041,Lad and Sons Restaurant,Bengaluru,Fast Food,3.1,51
+REST0042,Chanda Group Restaurant,Delhi,Italian,4.5,40
+REST0043,Mishra-Gala Restaurant,Jaipur,Desserts,4.7,19
+REST0044,Palla Group Restaurant,Bengaluru,Biryani,4.5,39
+REST0045,Soman-Wason Restaurant,Kolkata,Cafe,4.2,28
+REST0046,"Dyal, Sarkar and Pant Restaurant",Bengaluru,North Indian,3.3,28
+REST0047,"Ramachandran, Anne and Issac Restaurant",Delhi,Desserts,3.9,60
+REST0048,Dhillon LLC Restaurant,Pune,Fast Food,4.7,33
+REST0049,"Nadig, Atwal and Dora Restaurant",Pune,Desserts,3.2,29
+REST0050,Divan-Tata Restaurant,Delhi,Desserts,3.5,17
+REST0051,Comar-Ray Restaurant,Bengaluru,Fast Food,4.9,32
+REST0052,Verma-Aggarwal Restaurant,Delhi,Italian,5.0,28
+REST0053,Dass-Sengupta Restaurant,Mumbai,North Indian,4.3,55
+REST0054,"Chatterjee, Bansal and Kamdar Restaurant",Chennai,Pizza,3.2,60
+REST0055,"Guha, Salvi and Ganesan Restaurant",Pune,Chinese,3.8,54
+REST0056,"Purohit, Kalita and Pall Restaurant",Pune,Pizza,5.0,55
+REST0057,Halder Ltd Restaurant,Delhi,Pizza,3.4,32
+REST0058,"Atwal, Prabhakar and Patla Restaurant",Bengaluru,Fast Food,4.9,49
+REST0059,Mittal LLC Restaurant,Mumbai,Cafe,4.9,31
+REST0060,"Dash, Tata and Shah Restaurant",Hyderabad,Biryani,3.4,32
+REST0061,Roy-Pandey Restaurant,Hyderabad,Healthy Food,4.3,40
+REST0062,Sandhu-Virk Restaurant,Bengaluru,Biryani,3.5,42
+REST0063,Comar-Goda Restaurant,Chennai,Chinese,4.8,20
+REST0064,Sangha-Prakash Restaurant,Jaipur,Chinese,3.9,26
+REST0065,Gaba PLC Restaurant,Hyderabad,Healthy Food,4.0,26
+REST0066,Raj-Mane Restaurant,Pune,North Indian,3.6,26
+REST0067,"Sarkar, Mander and Chaudhary Restaurant",Kolkata,Healthy Food,3.4,24
+REST0068,Chawla Inc Restaurant,Mumbai,Cafe,3.5,56
+REST0069,"Babu, Sabharwal and Chawla Restaurant",Kolkata,South Indian,4.4,23
+REST0070,Chaudhry-Sawhney Restaurant,Delhi,Healthy Food,3.2,39
+REST0071,"Bali, Mann and Salvi Restaurant",Delhi,South Indian,4.7,56
+REST0072,Kapoor Group Restaurant,Delhi,Chinese,3.5,20
+REST0073,"Raj, Contractor and Hayre Restaurant",Pune,Chinese,4.9,53
+REST0074,Dash-Panchal Restaurant,Delhi,North Indian,4.9,21
+REST0075,Sachar-Randhawa Restaurant,Chennai,South Indian,3.4,45
+REST0076,Prasad and Sons Restaurant,Jaipur,Chinese,3.6,45
+REST0077,"Mander, Loyal and Lalla Restaurant",Bengaluru,Italian,3.1,59
+REST0078,Sachdeva-Khurana Restaurant,Pune,Desserts,3.2,17
+REST0079,Sachdeva Inc Restaurant,Mumbai,Desserts,3.6,47
+REST0080,Bal and Sons Restaurant,Kolkata,Chinese,3.0,29
+REST0081,Venkataraman-Nadkarni Restaurant,Delhi,Italian,3.9,24
+REST0082,Garde-Sani Restaurant,Chennai,Fast Food,3.5,58
+REST0083,Raman and Sons Restaurant,Kolkata,South Indian,4.0,22
+REST0084,"Ramaswamy, Behl and Sanghvi Restaurant",Hyderabad,South Indian,4.9,33
+REST0085,Ramakrishnan Ltd Restaurant,Chennai,South Indian,4.2,22
+REST0086,Rau LLC Restaurant,Chennai,South Indian,4.8,53
+REST0087,"Dutt, Sarkar and Kashyap Restaurant",Bengaluru,Chinese,3.9,36
+REST0088,Date PLC Restaurant,Bengaluru,Cafe,3.3,57
+REST0089,Ramanathan Ltd Restaurant,Pune,Healthy Food,4.6,37
+REST0090,Dutt-Naidu Restaurant,Mumbai,Fast Food,4.8,57
+REST0091,Chander Inc Restaurant,Chennai,Fast Food,4.6,60
+REST0092,Sarkar Inc Restaurant,Mumbai,North Indian,4.7,24
+REST0093,"Dua, Bala and Brar Restaurant",Bengaluru,Pizza,3.3,43
+REST0094,"Raja, Bakshi and De Restaurant",Jaipur,South Indian,3.2,42
+REST0095,Parmar-Grover Restaurant,Pune,Chinese,3.2,23
+REST0096,Kapadia LLC Restaurant,Bengaluru,Cafe,3.7,46
+REST0097,Wason and Sons Restaurant,Kolkata,Biryani,4.4,41
+REST0098,"Radhakrishnan, Lad and Behl Restaurant",Chennai,Chinese,4.6,56
+REST0099,Butala-Dhawan Restaurant,Hyderabad,Cafe,3.8,46
+REST0100,"Bajaj, Chauhan and Choudhry Restaurant",Jaipur,Desserts,4.1,29
+REST0101,Das-Chhabra Restaurant,Kolkata,South Indian,4.2,41
+REST0102,Mandal LLC Restaurant,Hyderabad,South Indian,3.5,15
+REST0103,Chander Inc Restaurant,Hyderabad,North Indian,3.7,45
+REST0104,Pathak-Johal Restaurant,Bengaluru,South Indian,3.1,37
+REST0105,Chaudhuri-Swaminathan Restaurant,Chennai,Chinese,3.6,24
+REST0106,Sachdev Inc Restaurant,Kolkata,Italian,3.4,29
+REST0107,Bose-Kade Restaurant,Delhi,Chinese,3.2,59
+REST0108,"Saini, Prashad and Murthy Restaurant",Bengaluru,Cafe,4.5,59
+REST0109,"Seshadri, Dyal and Gole Restaurant",Kolkata,Pizza,3.1,21
+REST0110,Anne-Gokhale Restaurant,Mumbai,Biryani,4.7,25
+REST0111,"Balay, Dalal and Oza Restaurant",Delhi,Chinese,3.7,20
+REST0112,Sule-Ahluwalia Restaurant,Hyderabad,South Indian,3.0,41
+REST0113,Vig Ltd Restaurant,Bengaluru,Chinese,3.9,23
+REST0114,Dara-Hans Restaurant,Pune,Biryani,3.8,36
+REST0115,"Balan, Wason and Bajaj Restaurant",Jaipur,North Indian,3.6,24
+REST0116,"Vala, Dua and Kalita Restaurant",Delhi,North Indian,4.2,26
+REST0117,Contractor-Kalla Restaurant,Bengaluru,North Indian,3.8,42
+REST0118,Narang and Sons Restaurant,Jaipur,Desserts,4.4,31
+REST0119,Chacko Ltd Restaurant,Pune,Italian,3.8,25
+REST0120,"Date, Loyal and Mahal Restaurant",Pune,South Indian,4.0,23
+REST0121,Iyengar-Chanda Restaurant,Hyderabad,Cafe,4.2,29
+REST0122,Menon-Sibal Restaurant,Kolkata,Chinese,4.6,50
+REST0123,"Tandon, Sarin and Vala Restaurant",Mumbai,Biryani,4.0,56
+REST0124,Hans-Krishna Restaurant,Kolkata,Cafe,3.3,38
+REST0125,Hora Ltd Restaurant,Kolkata,Italian,3.5,21
+REST0126,"Mand, Ramaswamy and Chauhan Restaurant",Mumbai,Pizza,4.2,36
+REST0127,"Muni, Gandhi and Jha Restaurant",Delhi,Italian,3.6,49
+REST0128,"Sura, Sant and Sehgal Restaurant",Mumbai,South Indian,3.4,15
+REST0129,Magar-Nagar Restaurant,Pune,Italian,4.1,55
+REST0130,"Chokshi, Rajagopal and Sanghvi Restaurant",Delhi,Italian,3.5,51
+REST0131,Pandit LLC Restaurant,Delhi,Healthy Food,5.0,45
+REST0132,"Bhatt, Sengupta and Ganesh Restaurant",Delhi,North Indian,3.6,34
+REST0133,Vaidya LLC Restaurant,Delhi,Pizza,4.5,40
+REST0134,"Rout, Memon and Wali Restaurant",Hyderabad,Pizza,4.5,37
+REST0135,Rao-Balan Restaurant,Bengaluru,South Indian,3.7,47
+REST0136,Gole LLC Restaurant,Mumbai,Desserts,4.6,24
+REST0137,Grewal-Parmar Restaurant,Delhi,Healthy Food,4.6,45
+REST0138,Bora and Sons Restaurant,Delhi,Fast Food,3.3,58
+REST0139,"Prabhu, Prabhu and Dhillon Restaurant",Jaipur,South Indian,4.8,20
+REST0140,Das-Andra Restaurant,Hyderabad,Italian,4.6,56
+REST0141,Apte-Narasimhan Restaurant,Bengaluru,Chinese,5.0,47
+REST0142,Shroff PLC Restaurant,Chennai,Biryani,4.6,36
+REST0143,Kaul-Bhatti Restaurant,Pune,Pizza,4.2,42
+REST0144,Mander-Kala Restaurant,Delhi,Cafe,3.5,54
+REST0145,"Kalla, Chauhan and Mall Restaurant",Mumbai,Chinese,4.1,46
+REST0146,"Borde, Sama and Saran Restaurant",Mumbai,North Indian,3.3,34
+REST0147,Nagarajan-Hora Restaurant,Mumbai,Biryani,3.2,35
+REST0148,Bawa Group Restaurant,Bengaluru,Fast Food,3.3,32
+REST0149,Batra-Maharaj Restaurant,Chennai,Pizza,3.2,26
+REST0150,Dar-Dash Restaurant,Jaipur,Fast Food,5.0,31
+REST0151,Garg-Narain Restaurant,Jaipur,Chinese,4.9,51
+REST0152,"Rajagopal, Khalsa and Bail Restaurant",Jaipur,North Indian,3.7,33
+REST0153,Badami-Agrawal Restaurant,Kolkata,Cafe,4.7,58
+REST0154,Mane-Deep Restaurant,Bengaluru,Biryani,3.7,54
+REST0155,Bansal-Walla Restaurant,Chennai,Pizza,3.2,41
+REST0156,"Baral, Nazareth and Babu Restaurant",Jaipur,Fast Food,4.8,58
+REST0157,Singhal Inc Restaurant,Delhi,Healthy Food,5.0,18
+REST0158,Mitra-Maharaj Restaurant,Hyderabad,Desserts,3.0,21
+REST0159,Pal-Ratta Restaurant,Pune,Cafe,3.3,40
+REST0160,Munshi Group Restaurant,Mumbai,Italian,3.8,44
+REST0161,"Batta, Ramaswamy and Misra Restaurant",Mumbai,Pizza,3.9,56
+REST0162,"Sha, Tak and Dara Restaurant",Jaipur,South Indian,3.2,21
+REST0163,Chauhan-Balakrishnan Restaurant,Kolkata,Cafe,3.4,36
+REST0164,Batta Inc Restaurant,Mumbai,Pizza,3.7,53
+REST0165,Cheema LLC Restaurant,Jaipur,Italian,4.4,45
+REST0166,"Sarin, Kara and Garde Restaurant",Mumbai,Fast Food,3.9,49
+REST0167,Halder Ltd Restaurant,Bengaluru,Biryani,3.3,28
+REST0168,Yogi-Ahluwalia Restaurant,Chennai,Healthy Food,3.1,53
+REST0169,"Ben, Lad and Bassi Restaurant",Kolkata,North Indian,4.9,38
+REST0170,Bava LLC Restaurant,Kolkata,Biryani,3.4,28
+REST0171,Lalla LLC Restaurant,Delhi,Cafe,3.5,55
+REST0172,"Raghavan, Madan and Garde Restaurant",Bengaluru,South Indian,3.3,32
+REST0173,Sharma Inc Restaurant,Kolkata,South Indian,3.6,60
+REST0174,Nagar and Sons Restaurant,Jaipur,Cafe,4.0,57
+REST0175,"Sachdev, Sekhon and Das Restaurant",Pune,Chinese,4.7,20
+REST0176,"Wable, Khosla and Sridhar Restaurant",Kolkata,Pizza,4.9,34
+REST0177,"Suri, Mand and Nagy Restaurant",Bengaluru,Italian,3.7,41
+REST0178,"Subramanian, Kara and Chanda Restaurant",Jaipur,Biryani,4.1,25
+REST0179,Minhas-Butala Restaurant,Kolkata,Pizza,4.8,51
+REST0180,Kibe-Jha Restaurant,Kolkata,North Indian,4.1,53
+REST0181,"Brahmbhatt, Borde and Talwar Restaurant",Hyderabad,South Indian,4.4,52
+REST0182,Kala Inc Restaurant,Bengaluru,Pizza,4.3,35
+REST0183,"Kalita, Sidhu and Rajan Restaurant",Delhi,Chinese,4.8,24
+REST0184,Sura Inc Restaurant,Jaipur,Pizza,3.2,58
+REST0185,Joshi-Wable Restaurant,Kolkata,Fast Food,4.0,15
+REST0186,"Munshi, Muni and Setty Restaurant",Jaipur,Chinese,4.3,55
+REST0187,"Dube, Thaman and Cherian Restaurant",Mumbai,North Indian,3.4,27
+REST0188,Kanda LLC Restaurant,Kolkata,Desserts,4.5,53
+REST0189,Sethi-Varghese Restaurant,Kolkata,Italian,3.7,27
+REST0190,Ratta and Sons Restaurant,Delhi,Pizza,4.6,16
+REST0191,Mall Group Restaurant,Pune,Fast Food,4.0,22
+REST0192,Mohanty PLC Restaurant,Jaipur,Biryani,3.8,37
+REST0193,"Chaudry, Din and Shenoy Restaurant",Chennai,Desserts,3.9,36
+REST0194,Choudhary and Sons Restaurant,Mumbai,Chinese,3.9,38
+REST0195,Sharma and Sons Restaurant,Bengaluru,Desserts,4.2,49
+REST0196,Balakrishnan-Soni Restaurant,Kolkata,Cafe,3.6,57
+REST0197,"Wali, Sethi and Pandey Restaurant",Kolkata,Fast Food,4.4,21
+REST0198,Dani-Chad Restaurant,Mumbai,South Indian,3.2,16
+REST0199,Sankar-Kala Restaurant,Kolkata,South Indian,4.0,54
+REST0200,Ranganathan PLC Restaurant,Mumbai,Biryani,4.0,17
+REST0201,Trivedi-Nath Restaurant,Pune,Cafe,3.4,44
+REST0202,Sastry LLC Restaurant,Kolkata,South Indian,3.4,45
+REST0203,Chaudhari-Bawa Restaurant,Mumbai,Pizza,4.9,44
+REST0204,"Raja, Sami and Hari Restaurant",Kolkata,Cafe,3.0,38
+REST0205,Gulati-Rau Restaurant,Hyderabad,Desserts,3.6,57
+REST0206,Majumdar PLC Restaurant,Pune,Fast Food,4.7,41
+REST0207,"Tak, Venkataraman and Sant Restaurant",Hyderabad,North Indian,4.8,41
+REST0208,Bedi Ltd Restaurant,Delhi,North Indian,3.1,38
+REST0209,Choudhry and Sons Restaurant,Chennai,Pizza,3.3,51
+REST0210,Bera Inc Restaurant,Kolkata,Italian,4.1,40
+REST0211,"Lata, Khare and Bhatti Restaurant",Hyderabad,Healthy Food,4.3,18
+REST0212,"Chaudhuri, Majumdar and Kara Restaurant",Kolkata,Chinese,4.9,39
+REST0213,"Ravel, Ramanathan and Ramaswamy Restaurant",Bengaluru,Cafe,4.8,48
+REST0214,Kannan Ltd Restaurant,Bengaluru,Cafe,3.5,60
+REST0215,"Loyal, Tandon and Jha Restaurant",Bengaluru,Desserts,3.2,51
+REST0216,Jani LLC Restaurant,Kolkata,Fast Food,4.7,25
+REST0217,"Mani, Mani and Aggarwal Restaurant",Chennai,Italian,3.2,16
+REST0218,Goyal PLC Restaurant,Kolkata,North Indian,4.3,52
+REST0219,"Sood, Mody and Khare Restaurant",Bengaluru,North Indian,4.2,49
+REST0220,Murty Ltd Restaurant,Mumbai,Healthy Food,3.8,23
+REST0221,Ganesan and Sons Restaurant,Jaipur,Pizza,3.4,56
+REST0222,Shah-Dhar Restaurant,Hyderabad,Fast Food,3.4,30
+REST0223,Som Group Restaurant,Kolkata,Fast Food,4.3,32
+REST0224,Bail-Goel Restaurant,Mumbai,Chinese,4.3,55
+REST0225,Bose-Garde Restaurant,Mumbai,South Indian,3.9,53
+REST0226,"Andra, Pandey and Som Restaurant",Mumbai,South Indian,3.3,31
+REST0227,"Agarwal, Suresh and Kota Restaurant",Bengaluru,South Indian,3.2,38
+REST0228,Choudhary-Bath Restaurant,Hyderabad,Cafe,3.2,16
+REST0229,Mannan and Sons Restaurant,Kolkata,South Indian,4.0,55
+REST0230,"Thakur, Ganesh and Din Restaurant",Mumbai,Italian,4.4,39
+REST0231,Chaudhry LLC Restaurant,Chennai,Biryani,4.6,26
+REST0232,"Nayak, Sethi and Swaminathan Restaurant",Pune,North Indian,4.8,57
+REST0233,"Panchal, Kurian and Sur Restaurant",Delhi,South Indian,5.0,37
+REST0234,Patla-Shanker Restaurant,Jaipur,Healthy Food,4.2,15
+REST0235,Pandit LLC Restaurant,Bengaluru,Desserts,4.5,22
+REST0236,"Nath, Vasa and Sule Restaurant",Hyderabad,Healthy Food,3.1,16
+REST0237,Madan Ltd Restaurant,Bengaluru,Italian,4.7,22
+REST0238,"Bail, Divan and Roy Restaurant",Hyderabad,North Indian,3.7,29
+REST0239,Dhar LLC Restaurant,Mumbai,Chinese,3.5,45
+REST0240,Balasubramanian-Konda Restaurant,Hyderabad,South Indian,3.7,50
+REST0241,"Sankar, Parsa and Jhaveri Restaurant",Pune,Biryani,4.5,46
+REST0242,"Chakraborty, Hari and Purohit Restaurant",Kolkata,Desserts,4.9,27
+REST0243,"Chokshi, Mahal and Sengupta Restaurant",Pune,Chinese,3.4,60
+REST0244,"Gill, Lanka and Palla Restaurant",Pune,Cafe,3.2,52
+REST0245,Raman-Sahni Restaurant,Pune,Chinese,4.6,46
+REST0246,More-Halder Restaurant,Kolkata,Biryani,3.8,32
+REST0247,Venkatesh Ltd Restaurant,Chennai,Healthy Food,3.2,39
+REST0248,Das-Sant Restaurant,Kolkata,Italian,4.1,38
+REST0249,Palan-Mani Restaurant,Mumbai,Biryani,3.3,17
+REST0250,Anand Group Restaurant,Pune,Healthy Food,3.8,53
+REST0251,"Din, Shukla and Doctor Restaurant",Chennai,Cafe,3.1,26
+REST0252,"Mann, Gaba and Mitter Restaurant",Chennai,Cafe,4.6,37
+REST0253,Mani-Bhattacharyya Restaurant,Hyderabad,South Indian,3.4,38
+REST0254,Aurora-Setty Restaurant,Chennai,Chinese,4.6,22
+REST0255,Kalla LLC Restaurant,Delhi,Pizza,4.4,60
+REST0256,"Dasgupta, Bera and Suresh Restaurant",Chennai,Italian,3.9,35
+REST0257,Ahluwalia-Sani Restaurant,Hyderabad,Desserts,3.1,33
+REST0258,Acharya-Bedi Restaurant,Hyderabad,Desserts,3.4,50
+REST0259,Devi-Palla Restaurant,Pune,Healthy Food,4.9,57
+REST0260,Thakkar-Dubey Restaurant,Mumbai,Healthy Food,4.8,41
+REST0261,Madan and Sons Restaurant,Kolkata,Pizza,4.6,27
+REST0262,"Hegde, Sankaran and Buch Restaurant",Hyderabad,North Indian,4.6,46
+REST0263,Kanda-Balay Restaurant,Delhi,Fast Food,3.8,22
+REST0264,Pant-Kothari Restaurant,Jaipur,Chinese,4.2,52
+REST0265,"Raju, Sami and Rastogi Restaurant",Kolkata,Italian,4.2,33
+REST0266,Lal LLC Restaurant,Delhi,Healthy Food,5.0,44
+REST0267,"Mukhopadhyay, Ghose and Sarin Restaurant",Pune,Chinese,4.7,40
+REST0268,"Naidu, Dewan and Iyengar Restaurant",Delhi,Desserts,4.8,17
+REST0269,Deshmukh-Saha Restaurant,Chennai,North Indian,3.1,21
+REST0270,"Iyengar, Mitra and Mody Restaurant",Kolkata,Fast Food,3.5,37
+REST0271,Mishra PLC Restaurant,Kolkata,South Indian,4.1,35
+REST0272,"Shenoy, Goswami and Prashad Restaurant",Jaipur,Healthy Food,3.1,34
+REST0273,Char-Devi Restaurant,Jaipur,Biryani,4.7,22
+REST0274,"Sathe, Munshi and Thakur Restaurant",Chennai,Healthy Food,3.2,29
+REST0275,"Parmar, Sidhu and Pandya Restaurant",Delhi,North Indian,3.3,35
+REST0276,Shukla-Salvi Restaurant,Kolkata,Italian,3.3,27
+REST0277,Shenoy-Bala Restaurant,Chennai,Desserts,5.0,59
+REST0278,"Bala, Sama and Chakrabarti Restaurant",Delhi,Fast Food,4.8,17
+REST0279,Mittal and Sons Restaurant,Mumbai,North Indian,4.9,19
+REST0280,"Vala, Prakash and Datta Restaurant",Pune,Pizza,4.4,39
+REST0281,"Memon, Bera and Ramaswamy Restaurant",Pune,Chinese,4.8,52
+REST0282,Rau Ltd Restaurant,Jaipur,South Indian,3.3,24
+REST0283,Shere PLC Restaurant,Kolkata,Biryani,4.3,48
+REST0284,Bhagat-Chad Restaurant,Hyderabad,Healthy Food,4.0,46
+REST0285,Madan Ltd Restaurant,Pune,Pizza,4.5,45
+REST0286,Nath PLC Restaurant,Hyderabad,South Indian,3.5,33
+REST0287,Mannan PLC Restaurant,Mumbai,Pizza,4.1,30
+REST0288,Narula-Bhat Restaurant,Hyderabad,South Indian,3.2,46
+REST0289,Vaidya Ltd Restaurant,Delhi,Italian,3.0,28
+REST0290,"Bera, Jayaraman and Varty Restaurant",Jaipur,Cafe,3.4,21
+REST0291,Tandon and Sons Restaurant,Chennai,Italian,4.6,48
+REST0292,Dubey LLC Restaurant,Chennai,Fast Food,4.4,56
+REST0293,"Mukhopadhyay, Ahuja and Sundaram Restaurant",Bengaluru,Desserts,3.2,23
+REST0294,"Iyer, Contractor and Bhavsar Restaurant",Hyderabad,Pizza,3.8,43
+REST0295,Dua PLC Restaurant,Hyderabad,Cafe,3.4,32
+REST0296,Venkatesh Inc Restaurant,Kolkata,Chinese,4.4,51
+REST0297,Jayaraman Inc Restaurant,Mumbai,Chinese,3.9,21
+REST0298,Bakshi-Tiwari Restaurant,Mumbai,Italian,3.0,44
+REST0299,Raman-Bhakta Restaurant,Bengaluru,Fast Food,3.1,57
+REST0300,Mital Group Restaurant,Jaipur,Pizza,3.5,50
