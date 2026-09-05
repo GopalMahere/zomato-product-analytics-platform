@@ -1,0 +1,215 @@
+{
+  "name": "Zomato_Product_Analytics",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "tables": [
+      {
+        "name": "Customers",
+        "columns": [
+          {
+            "name": "customer_id",
+            "dataType": "string"
+          },
+          {
+            "name": "customer_name",
+            "dataType": "string"
+          },
+          {
+            "name": "age",
+            "dataType": "string"
+          },
+          {
+            "name": "gender",
+            "dataType": "string"
+          },
+          {
+            "name": "city",
+            "dataType": "string"
+          },
+          {
+            "name": "signup_date",
+            "dataType": "string"
+          },
+          {
+            "name": "zomato_gold",
+            "dataType": "string"
+          },
+          {
+            "name": "age_group",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "name": "Restaurants",
+        "columns": [
+          {
+            "name": "restaurant_id",
+            "dataType": "string"
+          },
+          {
+            "name": "restaurant_name",
+            "dataType": "string"
+          },
+          {
+            "name": "city",
+            "dataType": "string"
+          },
+          {
+            "name": "cuisine",
+            "dataType": "string"
+          },
+          {
+            "name": "average_rating",
+            "dataType": "string"
+          },
+          {
+            "name": "average_prep_time",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "name": "DeliveryPartners",
+        "columns": [
+          {
+            "name": "partner_id",
+            "dataType": "string"
+          },
+          {
+            "name": "partner_name",
+            "dataType": "string"
+          },
+          {
+            "name": "city",
+            "dataType": "string"
+          },
+          {
+            "name": "vehicle_type",
+            "dataType": "string"
+          },
+          {
+            "name": "experience_years",
+            "dataType": "string"
+          },
+          {
+            "name": "rating",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "name": "Orders",
+        "columns": [
+          {
+            "name": "order_id",
+            "dataType": "string"
+          },
+          {
+            "name": "customer_id",
+            "dataType": "string"
+          },
+          {
+            "name": "restaurant_id",
+            "dataType": "string"
+          },
+          {
+            "name": "partner_id",
+            "dataType": "string"
+          },
+          {
+            "name": "order_date",
+            "dataType": "string"
+          },
+          {
+            "name": "order_time",
+            "dataType": "string"
+          },
+          {
+            "name": "order_amount",
+            "dataType": "string"
+          },
+          {
+            "name": "delivery_fee",
+            "dataType": "string"
+          },
+          {
+            "name": "discount",
+            "dataType": "string"
+          },
+          {
+            "name": "final_amount",
+            "dataType": "string"
+          },
+          {
+            "name": "payment_id",
+            "dataType": "string"
+          },
+          {
+            "name": "status",
+            "dataType": "string"
+          },
+          {
+            "name": "delivery_time_minutes",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "name": "Payments",
+        "columns": [
+          {
+            "name": "payment_id",
+            "dataType": "string"
+          },
+          {
+            "name": "order_id",
+            "dataType": "string"
+          },
+          {
+            "name": "payment_method",
+            "dataType": "string"
+          },
+          {
+            "name": "payment_status",
+            "dataType": "string"
+          }
+        ]
+      },
+      {
+        "name": "Reviews",
+        "columns": [
+          {
+            "name": "review_id",
+            "dataType": "string"
+          },
+          {
+            "name": "order_id",
+            "dataType": "string"
+          },
+          {
+            "name": "customer_id",
+            "dataType": "string"
+          },
+          {
+            "name": "restaurant_id",
+            "dataType": "string"
+          },
+          {
+            "name": "rating",
+            "dataType": "string"
+          },
+          {
+            "name": "review_text",
+            "dataType": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

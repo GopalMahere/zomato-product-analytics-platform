@@ -1,0 +1,337 @@
+/* Modern Dark Glassmorphism Power BI Design System */
+:root {
+    --bg-dark: #0F1318;
+    --card-bg: #1A2026;
+    --card-border: #2A343F;
+    --accent-red: #E23744;
+    --accent-gold: #FFD700;
+    --accent-blue: #00F2FE;
+    --accent-purple: #9D50BB;
+    --accent-green: #00E676;
+    --text-main: #F1F5F9;
+    --text-muted: #94A3B8;
+    --header-bg: #141A21;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Header */
+.pbi-header {
+    height: 60px;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--card-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.zomato-logo {
+    font-weight: 900;
+    font-size: 24px;
+    color: var(--accent-red);
+    letter-spacing: -0.5px;
+    font-style: italic;
+}
+
+.pbi-badge {
+    background: rgba(226, 55, 68, 0.15);
+    color: var(--accent-red);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(226, 55, 68, 0.3);
+}
+
+.filters-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    font-size: 10px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.filter-group select {
+    background: #222B35;
+    color: var(--text-main);
+    border: 1px solid var(--card-border);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-group select:hover {
+    border-color: var(--accent-red);
+}
+
+.btn-reset {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--card-border);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 12px;
+}
+
+.btn-reset:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Dashboard Body */
+.dashboard-body {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Tabs Sidebar */
+.report-tabs {
+    width: 230px;
+    background: var(--header-bg);
+    border-right: 1px solid var(--card-border);
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 12px 14px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+}
+
+.tab-btn.active {
+    background: var(--accent-red);
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(226, 55, 68, 0.4);
+}
+
+.dax-info-box {
+    margin-top: auto;
+    background: #1C242D;
+    border: 1px dashed var(--card-border);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.dax-info-box:hover {
+    border-color: var(--accent-gold);
+    background: #252F3B;
+}
+
+.dax-icon {
+    font-size: 20px;
+    color: var(--accent-gold);
+    font-weight: bold;
+}
+
+/* Report Canvas */
+.report-canvas {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.tab-content {
+    display: none;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tab-content.active {
+    display: flex;
+}
+
+/* KPI Cards */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.kpi-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.kpi-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-red);
+}
+
+.kpi-card.gold-border {
+    border-color: var(--accent-gold);
+}
+
+.kpi-card.highlight-danger {
+    border-color: rgba(226, 55, 68, 0.5);
+    background: linear-gradient(135deg, #1A2026 0%, #291518 100%);
+}
+
+.kpi-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kpi-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.kpi-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.kpi-sub.positive { color: var(--accent-green); }
+.kpi-sub.negative { color: var(--accent-red); }
+
+/* Charts Layout */
+.charts-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.chart-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.chart-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.canvas-container {
+    position: relative;
+    height: 280px;
+    width: 100%;
+}
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #182028;
+    border: 1px solid var(--accent-gold);
+    border-radius: 12px;
+    width: 500px;
+    max-width: 90%;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+
+.modal-body pre {
+    background: #0D1117;
+    border: 1px solid #30363D;
+    padding: 16px;
+    border-radius: 8px;
+    color: var(--accent-gold);
+    font-family: monospace;
+    font-size: 13px;
+    white-space: pre-wrap;
+    margin-top: 12px;
+}
