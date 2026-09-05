@@ -335,3 +335,38 @@ body {
     white-space: pre-wrap;
     margin-top: 12px;
 }
+
+/* Gallery Grid styling */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+}
+
+.gallery-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-gold);
+}
+
+.gallery-card h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.gallery-card img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
+}

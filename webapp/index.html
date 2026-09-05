@@ -72,6 +72,10 @@
             <button class="tab-btn" data-tab="tab-finance" onclick="switchTab('tab-finance')">
                 <span class="icon">💸</span> Financial Leakage
             </button>
+            <button class="tab-btn" data-tab="tab-gallery" onclick="switchTab('tab-gallery')">
+                <span class="icon">🖼️</span> High-Res Chart Gallery
+            </button>
+
             <div class="dax-info-box" onclick="toggleDaxDrawer()">
                 <div class="dax-icon">∑</div>
                 <div>
@@ -212,6 +216,29 @@
                         <h3>Financial Refund & Leakage Impact</h3>
                         <div class="canvas-container"><canvas id="chart-refund-impact"></canvas></div>
                     </div>
+                </div>
+            </div>
+
+            <!-- TAB 6: HIGH-RES CHART GALLERY -->
+            <div id="tab-gallery" class="tab-content">
+                <h2 style="font-size:18px; margin-bottom:12px; color:var(--accent-gold);">🖼️ All 15 High-Resolution Analytical Charts</h2>
+                <p style="color:var(--text-muted); margin-bottom:20px; font-size:13px;">Generated directly from Seaborn/Matplotlib Python EDA engine:</p>
+                <div class="gallery-grid">
+                    <div class="gallery-card"><h4>01. Executive KPIs</h4><img src="visualizations/01_executive_kpis.png" alt="KPIs"></div>
+                    <div class="gallery-card"><h4>02. Monthly Revenue Trend</h4><img src="visualizations/02_monthly_revenue_trend.png" alt="Revenue Trend"></div>
+                    <div class="gallery-card"><h4>03. Order Status Breakdown</h4><img src="visualizations/03_order_status_breakdown.png" alt="Order Status"></div>
+                    <div class="gallery-card"><h4>04. Revenue by City</h4><img src="visualizations/04_revenue_by_city.png" alt="City Revenue"></div>
+                    <div class="gallery-card"><h4>05. Top 10 Restaurants</h4><img src="visualizations/05_top10_restaurants.png" alt="Top Restaurants"></div>
+                    <div class="gallery-card"><h4>06. Cuisine Popularity</h4><img src="visualizations/06_cuisine_popularity.png" alt="Cuisine"></div>
+                    <div class="gallery-card"><h4>07. Customer Demographics</h4><img src="visualizations/07_customer_demographics.png" alt="Demographics"></div>
+                    <div class="gallery-card"><h4>08. Order Amount Distribution</h4><img src="visualizations/08_order_amount_distribution.png" alt="Order Amount"></div>
+                    <div class="gallery-card"><h4>09. Payment Method Analysis</h4><img src="visualizations/09_payment_analysis.png" alt="Payment"></div>
+                    <div class="gallery-card"><h4>10. Delivery Partner Performance</h4><img src="visualizations/10_delivery_partner_performance.png" alt="Delivery Partner"></div>
+                    <div class="gallery-card"><h4>11. Cancellation & Refund Analysis</h4><img src="visualizations/11_cancellation_analysis.png" alt="Cancellation"></div>
+                    <div class="gallery-card"><h4>12. Peak Order Hours Heatmap</h4><img src="visualizations/12_hourly_order_heatmap.png" alt="Heatmap"></div>
+                    <div class="gallery-card"><h4>13. Zomato Gold vs Regular Members</h4><img src="visualizations/13_gold_vs_regular_members.png" alt="Gold Members"></div>
+                    <div class="gallery-card"><h4>14. Customer Rating Analysis</h4><img src="visualizations/14_rating_analysis.png" alt="Ratings"></div>
+                    <div class="gallery-card"><h4>15. Delivery Time SLA Analysis</h4><img src="visualizations/15_delivery_time_analysis.png" alt="Delivery Time"></div>
                 </div>
             </div>
         </section>

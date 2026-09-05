@@ -241,7 +241,20 @@ function switchTab(tabId) {
     document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
 
     document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
-    document.getElementById(tabId).classList.add('active');
+    const activeContent = document.getElementById(tabId);
+    if (activeContent) {
+        activeContent.classList.add('active');
+    }
+
+    // Trigger Chart.js resize & update for canvases inside activated tab
+    setTimeout(() => {
+        Object.values(charts).forEach(c => {
+            if (c) {
+                c.resize();
+                c.update();
+            }
+        });
+    }, 100);
 }
 
 function applyFilters() {
