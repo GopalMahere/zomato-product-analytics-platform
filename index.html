@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Product Analytics — Power BI Interactive Dashboard</title>
+    <!-- Google Fonts & Chart.js -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Power BI App Header -->
+    <header class="pbi-header">
+        <div class="brand">
+            <div class="zomato-logo">zomato</div>
+            <div class="pbi-badge">Power BI Interactive Desktop</div>
+        </div>
+        <div class="filters-bar">
+            <div class="filter-group">
+                <label>City Slicer</label>
+                <select id="filter-city">
+                    <option value="ALL">All Cities</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi NCR">Delhi NCR</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Membership</label>
+                <select id="filter-gold">
+                    <option value="ALL">All Members</option>
+                    <option value="Gold">Zomato Gold Only</option>
+                    <option value="Regular">Regular Users</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Order Status</label>
+                <select id="filter-status">
+                    <option value="ALL">All Statuses</option>
+                    <option value="Delivered">Delivered</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+            </div>
+            <button class="btn-reset" onclick="resetFilters()">Reset Slicers</button>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="dashboard-body">
+        <!-- Sidebar Navigation Tabs -->
+        <nav class="report-tabs">
+            <button class="tab-btn active" data-tab="tab-exec" onclick="switchTab('tab-exec')">
+                <span class="icon">📊</span> Executive Summary
+            </button>
+            <button class="tab-btn" data-tab="tab-customer" onclick="switchTab('tab-customer')">
+                <span class="icon">👥</span> Customer Insights
+            </button>
+            <button class="tab-btn" data-tab="tab-restaurant" onclick="switchTab('tab-restaurant')">
+                <span class="icon">🍔</span> Restaurant Analytics
+            </button>
+            <button class="tab-btn" data-tab="tab-delivery" onclick="switchTab('tab-delivery')">
+                <span class="icon">🚚</span> Logistics & Fleet
+            </button>
+            <button class="tab-btn" data-tab="tab-finance" onclick="switchTab('tab-finance')">
+                <span class="icon">💸</span> Financial Leakage
+            </button>
+            <button class="tab-btn" data-tab="tab-gallery" onclick="switchTab('tab-gallery')">
+                <span class="icon">🖼️</span> High-Res Chart Gallery
+            </button>
+
+            <div class="dax-info-box" onclick="toggleDaxDrawer()">
+                <div class="dax-icon">∑</div>
+                <div>
+                    <strong>DAX Inspector</strong>
+                    <p style="font-size:11px; margin-top:2px; color:#a0aec0;">Click to view DAX Formulas</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Report Canvas -->
+        <section class="report-canvas">
+            <!-- TAB 1: EXECUTIVE SUMMARY -->
+            <div id="tab-exec" class="tab-content active">
+                <div class="kpi-grid">
+                    <div class="kpi-card" onclick="showDax('Total Revenue', 'Total Revenue = CALCULATE(SUM(Orders[final_amount]), Orders[status] = \"Delivered\")')">
+                        <span class="kpi-label">Total Revenue</span>
+                        <div class="kpi-value" id="kpi-revenue">₹78.48L</div>
+                        <span class="kpi-sub">Target: ₹75L (+4.6%)</span>
+                    </div>
+                    <div class="kpi-card" onclick="showDax('Total Orders', 'Total Orders = COUNTROWS(Orders)')">
+                        <span class="kpi-label">Total Orders</span>
+                        <div class="kpi-value" id="kpi-orders">10,000</div>
+                        <span class="kpi-sub">Volume Delivered</span>
+                    </div>
+                    <div class="kpi-card" onclick="showDax('Avg Order Value (AOV)', 'Avg Order Value = DIVIDE([Total Revenue], [Total Orders], 0)')">
+                        <span class="kpi-label">Avg Order Value (AOV)</span>
+                        <div class="kpi-value" id="kpi-aov">₹971</div>
+                        <span class="kpi-sub">Basket Size</span>
+                    </div>
+                    <div class="kpi-card highlight-danger" onclick="showDax('Cancellation Rate %', 'Cancellation Rate % = DIVIDE(CALCULATE(COUNTROWS(Orders), Orders[status] = \"Cancelled\"), [Total Orders], 0)')">
+                        <span class="kpi-label">Cancellation Rate</span>
+                        <div class="kpi-value" id="kpi-cancel">9.82%</div>
+                        <span class="kpi-sub negative">High Threshold (Target <8%)</span>
+                    </div>
+                    <div class="kpi-card" onclick="showDax('On-Time Delivery %', 'On-Time Delivery % = DIVIDE(CALCULATE(COUNTROWS(Orders), Orders[delivery_time_minutes] <= 45), [Total Orders], 0)')">
+                        <span class="kpi-label">On-Time Delivery %</span>
+                        <div class="kpi-value" id="kpi-ontime">88.4%</div>
+                        <span class="kpi-sub positive">SLA ≤ 45 mins</span>
+                    </div>
+                </div>
+
+                <div class="charts-grid-2">
+                    <div class="chart-card">
+                        <h3>Monthly Revenue & Order Volume Trend</h3>
+                        <div class="canvas-container"><canvas id="chart-monthly-trend"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Revenue Distribution by Metro City</h3>
+                        <div class="canvas-container"><canvas id="chart-city-revenue"></canvas></div>
+                    </div>
+                </div>
+
+                <div class="charts-grid-2">
+                    <div class="chart-card">
+                        <h3>Order Status Breakdown</h3>
+                        <div class="canvas-container"><canvas id="chart-order-status"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Top 10 Revenue Generating Restaurants</h3>
+                        <div class="canvas-container"><canvas id="chart-top-rest"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: CUSTOMER INSIGHTS -->
+            <div id="tab-customer" class="tab-content">
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <span class="kpi-label">Active Customers</span>
+                        <div class="kpi-value">2,500</div>
+                        <span class="kpi-sub">Total Registered</span>
+                    </div>
+                    <div class="kpi-card gold-border">
+                        <span class="kpi-label">Zomato Gold Share</span>
+                        <div class="kpi-value" style="color:#FFD700;">34.2%</div>
+                        <span class="kpi-sub">855 Subscribers</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-label">Repeat Order Rate</span>
+                        <div class="kpi-value">62.8%</div>
+                        <span class="kpi-sub">≥2 Orders</span>
+                    </div>
+                    <div class="kpi-card">
+                        <span class="kpi-label">Avg Customer Rating</span>
+                        <div class="kpi-value">3.03 / 5.0</div>
+                        <span class="kpi-sub">8,000 Reviews</span>
+                    </div>
+                </div>
+
+                <div class="charts-grid-2">
+                    <div class="chart-card">
+                        <h3>Customer Demographics — Age Distribution</h3>
+                        <div class="canvas-container"><canvas id="chart-demographics-age"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Gender Split & Gold Membership</h3>
+                        <div class="canvas-container"><canvas id="chart-demographics-gender"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: RESTAURANT & CUISINE -->
+            <div id="tab-restaurant" class="tab-content">
+                <div class="charts-grid-2">
+                    <div class="chart-card">
+                        <h3>Cuisine Popularity Share</h3>
+                        <div class="canvas-container"><canvas id="chart-cuisine-dist"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Top Restaurant Ratings vs Revenue</h3>
+                        <div class="canvas-container"><canvas id="chart-rest-rating"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 4: DELIVERY LOGISTICS -->
+            <div id="tab-delivery" class="tab-content">
+                <div class="charts-grid-2">
+                    <div class="chart-card">
+                        <h3>Top Delivery Partners by Completed Trips</h3>
+                        <div class="canvas-container"><canvas id="chart-partner-perf"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Payment Method Preference</h3>
+                        <div class="canvas-container"><canvas id="chart-payment-methods"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 5: FINANCIAL LEAKAGE -->
+            <div id="tab-finance" class="tab-content">
+                <div class="charts-grid-2">
+                    <div class="chart-card">
+                        <h3>Order Cancellation Reasons Breakdown</h3>
+                        <div class="canvas-container"><canvas id="chart-cancellation-reasons"></canvas></div>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Financial Refund & Leakage Impact</h3>
+                        <div class="canvas-container"><canvas id="chart-refund-impact"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 6: HIGH-RES CHART GALLERY -->
+            <div id="tab-gallery" class="tab-content">
+                <h2 style="font-size:18px; margin-bottom:12px; color:var(--accent-gold);">🖼️ All 15 High-Resolution Analytical Charts</h2>
+                <p style="color:var(--text-muted); margin-bottom:20px; font-size:13px;">Generated directly from Seaborn/Matplotlib Python EDA engine:</p>
+                <div class="gallery-grid">
+                    <div class="gallery-card"><h4>01. Executive KPIs</h4><img src="visualizations/01_executive_kpis.png" alt="KPIs"></div>
+                    <div class="gallery-card"><h4>02. Monthly Revenue Trend</h4><img src="visualizations/02_monthly_revenue_trend.png" alt="Revenue Trend"></div>
+                    <div class="gallery-card"><h4>03. Order Status Breakdown</h4><img src="visualizations/03_order_status_breakdown.png" alt="Order Status"></div>
+                    <div class="gallery-card"><h4>04. Revenue by City</h4><img src="visualizations/04_revenue_by_city.png" alt="City Revenue"></div>
+                    <div class="gallery-card"><h4>05. Top 10 Restaurants</h4><img src="visualizations/05_top10_restaurants.png" alt="Top Restaurants"></div>
+                    <div class="gallery-card"><h4>06. Cuisine Popularity</h4><img src="visualizations/06_cuisine_popularity.png" alt="Cuisine"></div>
+                    <div class="gallery-card"><h4>07. Customer Demographics</h4><img src="visualizations/07_customer_demographics.png" alt="Demographics"></div>
+                    <div class="gallery-card"><h4>08. Order Amount Distribution</h4><img src="visualizations/08_order_amount_distribution.png" alt="Order Amount"></div>
+                    <div class="gallery-card"><h4>09. Payment Method Analysis</h4><img src="visualizations/09_payment_analysis.png" alt="Payment"></div>
+                    <div class="gallery-card"><h4>10. Delivery Partner Performance</h4><img src="visualizations/10_delivery_partner_performance.png" alt="Delivery Partner"></div>
+                    <div class="gallery-card"><h4>11. Cancellation & Refund Analysis</h4><img src="visualizations/11_cancellation_analysis.png" alt="Cancellation"></div>
+                    <div class="gallery-card"><h4>12. Peak Order Hours Heatmap</h4><img src="visualizations/12_hourly_order_heatmap.png" alt="Heatmap"></div>
+                    <div class="gallery-card"><h4>13. Zomato Gold vs Regular Members</h4><img src="visualizations/13_gold_vs_regular_members.png" alt="Gold Members"></div>
+                    <div class="gallery-card"><h4>14. Customer Rating Analysis</h4><img src="visualizations/14_rating_analysis.png" alt="Ratings"></div>
+                    <div class="gallery-card"><h4>15. Delivery Time SLA Analysis</h4><img src="visualizations/15_delivery_time_analysis.png" alt="Delivery Time"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- DAX Formula Drawer Modal -->
+    <div id="dax-modal" class="modal-overlay" onclick="closeDaxModal(event)">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="dax-title">DAX Formula Inspector</h3>
+                <span class="close-btn" onclick="closeDaxModalDirect()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>DAX Expression used in Power BI Tabular Engine:</p>
+                <pre id="dax-code">-- Click any metric card to inspect DAX</pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
